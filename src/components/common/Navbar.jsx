@@ -12,7 +12,9 @@ const Navbar = () => {
     useEffect(() => {
         localStorage.setItem('theme', theme);
         const localTheme = localStorage.getItem('theme')
-        document.querySelector('html').setAttribute('data-theme', localTheme)
+        document.querySelector('html').classList.remove('light', 'dark');
+        document.querySelector('html').classList.add(localTheme);
+        console.log(document.querySelector('html').classList);
     }, [theme])
     const onToggle = (e) => {
         e.target.checked ? setTheme('dark') : setTheme('light')
@@ -36,7 +38,7 @@ const Navbar = () => {
             </p>
         </>
     const auth = user ?
-        <div className='dropdown dropdown-end z-50'>
+        <div className='dropdown dropdown-end  z-50 '>
             <div
                 tabIndex={0}
                 role='button'
@@ -71,7 +73,7 @@ const Navbar = () => {
             </p>
         </div>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 bg-opacity-50 fixed z-50 backdrop-blur-lg top-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
