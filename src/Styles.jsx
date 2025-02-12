@@ -16,10 +16,10 @@ const styles = {
     sectionBG:'bg-white bg-opacity-50 dark:bg-base-200 shadow-xl',
     sectionGapping:"my-5 sm:my-8 md:my-10 py-10  px-4",
     navbar:'text-gray-100 dark:gray-600 font-semibold hover:bg-[#A1E3F9] hover:text-black rounded-md',
-    button:'btn btn-primary border-none !bg-[#578FCA] text-white  hover:text-black',
+    button:'btn  border-none !bg-[#578FCA] text-white  hover:text-black',
     primary:'text-[#578FCA]',
     animation:"transform hover:scale-105 transition-transform hover:shadow-xl",
-    sectionBorder:'border border-gray-200 dark:border-gray-700 rounded-xl'
+    sectionBorder:'border border-gray-200 dark:border-gray-700 rounded-xl',
   };
   
   export { styles };

@@ -98,7 +98,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">
+                <a className="flex justify-center items-center text-xl">
                     <img src={icon} alt="icon" width={50}/>
                     Language Club
                 </a>

@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import Loading from "../common/Loading";
 import { toast } from "react-toastify";
+import { styles } from "../../Styles";
 
 const fetchSearch = async (search) => {
     const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/search?search=${search}`)
@@ -29,8 +30,8 @@ const FindTutors = () => {
         toast.error(error.message)
     }
     return (
-        <div className="my-6">
-            <h1 className="text-center text-3xl md:text-6xl font-bold md:font-extrabold my-4">Tutors</h1>
+        <div className="mt-24">
+            <h1 className={`${styles.sectionHeadText}`}>Tutors</h1>
             <form className="text-center my-4" onSubmit={handleSearch}>
                 <input
                     type="text"
@@ -41,7 +42,7 @@ const FindTutors = () => {
                 <input type="submit" value='search' className="p-2 border border-gray-300 rounded-md" />
 
             </form>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="flex flex-wrap gap-4 justify-center">
                 {
                     isLoading ? (
                         <Loading />
