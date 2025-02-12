@@ -13,10 +13,13 @@ const styles = {
     sectionSubText:
       "sm:text-[18px] text-[14px] uppercase tracking-wider text-center mb-2 md:mb-4 text-gray-700 dark:text-gray-300 ",
     backGround:'bg-white dark:bg-black',
-    sectionBG:'bg-white bg-opacity-50 dark:bg-base-200 my-5 sm:my-8 md:my-10 py-10 transform hover:scale-105 transition-transform shadow-xl',
+    sectionBG:'bg-white bg-opacity-50 dark:bg-base-200 shadow-xl',
+    sectionGapping:"my-5 sm:my-8 md:my-10 py-10  px-4",
     navbar:'text-gray-100 dark:gray-600 font-semibold hover:bg-[#A1E3F9] hover:text-black rounded-md',
-    button:'btn btn-primary border-none !bg-[#578FCA] text-white dark:text-black hover:text-black',
-    primary:'text-[#578FCA]'
+    button:'btn btn-primary border-none !bg-[#578FCA] text-white  hover:text-black',
+    primary:'text-[#578FCA]',
+    animation:"transform hover:scale-105 transition-transform hover:shadow-xl",
+    sectionBorder:'border border-gray-200 dark:border-gray-700 rounded-xl'
   };
   
   export { styles };

@@ -1,5 +1,4 @@
-
-
+import { styles } from "../Styles";
 const UpcomingEvents = () => {
   const events = [
     {
@@ -20,17 +19,18 @@ const UpcomingEvents = () => {
   ];
 
   return (
-    <div className="my-8 p-8 bg-gray-50 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold text-blue-700 text-center mb-6">Upcoming Events</h2>
+    <div className={`${styles.sectionBorder} ${styles.sectionGapping}`}>
+      <h2 className={`${styles.sectionHeadText} `}>Upcoming Events</h2>
+      <p className={`${styles.sectionSubText}`}>Discover new opportunities to learn and connect</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {events.map((event, index) => (
           <div
             key={index}
-            className="p-6 border rounded-lg hover:shadow-md transition-shadow"
+            className={`${styles.animation} p-6 border rounded-lg hover:shadow-md transition-shadow`}
           >
-            <h3 className="text-lg font-semibold text-gray-700">{event.title}</h3>
-            <p className="text-sm text-gray-500">{event.date}</p>
-            <p className="mt-2 text-gray-600">{event.description}</p>
+            <h3 className={`text-lg font-semibold ${styles.primary}`}>{event.title}</h3>
+            <p className={`text-gray-700 dark:text-gray-300`}>{event.date}</p>
+            <p className="mt-2 text-gray-700 dark:text-gray-300">{event.description}</p>
           </div>
         ))}
       </div>
