@@ -25,12 +25,12 @@ const Stats = () => {
         toast.error(error.message)
     }
     return (
-        <div className="bg-base-100 py-10">
+        <div className="bg-white dark:bg-base-200 py-10">
             <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 {stats.map((stat, index) => (
                     <div key={index} className="flex flex-col items-center">
                         <h3 className="text-4xl font-bold text-primary">{stat.value}</h3>
-                        <p className="text-sm text-gray-600">{stat.label}</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-200">{stat.label}</p>
                     </div>
                 ))}
             </div>

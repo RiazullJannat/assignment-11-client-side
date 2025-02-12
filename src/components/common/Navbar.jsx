@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { RxSun } from "react-icons/rx";
 import { FaRegMoon } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import {styles} from '../../Styles'
 
 
 const Navbar = () => {
@@ -28,11 +29,11 @@ const Navbar = () => {
     }
     const links =
         <>
-            <li><NavLink to={'/'}>Home</NavLink></li>
-            <li><NavLink to={'/findTutors'}>Find Tutors</NavLink></li>
-            <li><NavLink to={'/addTutorials'}>Add Tutorials</NavLink></li>
-            <li><NavLink to={'/myTutorials'}>My Tutorials</NavLink></li>
-            <li><NavLink to={'/myBookedTutors'}>My Booked Tutors</NavLink></li>
+            <li className={`${styles.navbar}`}><NavLink to={'/'}>Home</NavLink></li>
+            <li className={`${styles.navbar}`}><NavLink to={'/findTutors'}>Find Tutors</NavLink></li>
+            <li className={`${styles.navbar}`}><NavLink to={'/addTutorials'}>Add Tutorials</NavLink></li>
+            <li className={`${styles.navbar}`}><NavLink to={'/myTutorials'}>My Tutorials</NavLink></li>
+            <li className={`${styles.navbar}`}><NavLink to={'/myBookedTutors'}>My Booked Tutors</NavLink></li>
             <p className="md:hidden gap-3 text-base font-bold block">
                 <Link to={'/login'}>Login</Link> or <Link to={'/register'}>Register</Link>
             </p>
@@ -60,7 +61,7 @@ const Navbar = () => {
                 <li className='mt-2'>
                     <button
                         onClick={logOut}
-                        className='bg-gray-200 block text-center'
+                        className={`block text-center ${styles.navbar}`}
                     >
                         Logout
                     </button>
