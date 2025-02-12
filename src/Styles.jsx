@@ -9,13 +9,14 @@ const styles = {
       "text-gray-700 dark:text-gray-300 text-[18px] sm:text-[20px] md:text-[24px] leading-[28px] sm:leading-[32px] md:leading-[36px] max-w-3xl mx-auto mt-4",
   
     sectionHeadText:
-      "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+      "text-[#3674B5] font-black md:text-[55px] sm:text-[50px] xs:text-[40px] text-[30px] text-center mb-2 md:mb-4 ",
     sectionSubText:
-      "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+      "sm:text-[18px] text-[14px] uppercase tracking-wider text-center mb-2 md:mb-4 text-gray-700 dark:text-gray-300 ",
     backGround:'bg-white dark:bg-black',
-    sectionBG:'bg-white bg-opacity-50 dark:bg-base-200 my-5 sm:8 md:10',
+    sectionBG:'bg-white bg-opacity-50 dark:bg-base-200 my-5 sm:my-8 md:my-10 py-10 transform hover:scale-105 transition-transform shadow-xl',
     navbar:'text-gray-100 dark:gray-600 font-semibold hover:bg-[#A1E3F9] hover:text-black rounded-md',
-    button:'btn btn-primary border-none !bg-[#578FCA] text-white dark:text-black hover:text-black'
+    button:'btn btn-primary border-none !bg-[#578FCA] text-white dark:text-black hover:text-black',
+    primary:'text-[#578FCA]'
   };
   
   export { styles };
