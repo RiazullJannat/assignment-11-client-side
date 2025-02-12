@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styles } from "../Styles";
 
 const JoinCommunity = () => {
@@ -9,9 +10,9 @@ const JoinCommunity = () => {
         Become a part of our growing language club. Interact with experienced tutors, participate in engaging activities, 
         and master your favorite languages in a friendly environment!
       </p>
-      <button className={`${styles.button}`}>
+      <Link to={'/processing'}><button className={`${styles.button}`}>
         Join Now
-      </button>
+      </button></Link>
     </div>
   );
 };

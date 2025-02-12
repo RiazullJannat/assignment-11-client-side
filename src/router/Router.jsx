@@ -14,6 +14,7 @@ import Private from "../private/Private";
 import axios from "axios";
 import TutorDetails from "../components/PageComponents/TutorDetails";
 import Loading from "../components/common/Loading";
+import Processing from "../components/common/Processing";
 const fallbackElement = <Loading></Loading>;
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path:'/processing',
+        element:<Processing></Processing>
       }
     ]
   },

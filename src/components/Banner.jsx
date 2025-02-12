@@ -55,7 +55,7 @@ const Banner = () => {
                     </h1>
                     <p className={`${styles.heroSubText}`}>A place where language learning meets friendship and fun.</p>
                     <div className="card-actions mt-4">
-                        <a className={`${styles.button}`}>
+                        <a className={`${styles.button}`} href='#languages'>
                             Get Started
                         </a>
                     </div>

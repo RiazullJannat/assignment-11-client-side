@@ -17,7 +17,7 @@ const LanguageCategory = () => {
   ];
 
   return (
-    <section className={`${styles.sectionGapping} ${styles.sectionBorder} `}>
+    <section className={`${styles.sectionGapping} ${styles.sectionBorder} `} id="languages">
       <div>
         <h3 className={`${styles.sectionHeadText}`}>Choose Your Language</h3>
         <p className={`${styles.sectionSubText}`}>Find teachers in the language of your choice</p>

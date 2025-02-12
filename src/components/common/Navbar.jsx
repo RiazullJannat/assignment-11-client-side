@@ -4,7 +4,8 @@ import { toast } from "react-toastify";
 import { RxSun } from "react-icons/rx";
 import { FaRegMoon } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import {styles} from '../../Styles'
+import { styles } from '../../Styles'
+import icon from '../../assets/without-bg.png'
 
 
 const Navbar = () => {
@@ -97,7 +98,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Language Club</a>
+                <a className="btn btn-ghost text-xl">
+                    <img src={icon} alt="icon" width={50}/>
+                    Language Club
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -110,7 +114,7 @@ const Navbar = () => {
             <div>
                 <label className="swap swap-rotate">
                     {/* this hidden checkbox controls the state */}
-                    <input type="checkbox" onChange={onToggle} checked={theme === 'light' ? false : true}/>
+                    <input type="checkbox" onChange={onToggle} checked={theme === 'light' ? false : true} />
 
                     {/* sun icon */}
                     <RxSun className="swap-on h-10 w-4 md:w-6 fill-current" />
